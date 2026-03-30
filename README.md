@@ -77,8 +77,14 @@ open http://localhost:3000
 
 1. 访问 https://app.all-hands.dev
 2. 使用 GitHub / GitLab 账号登录
-3. 选择 Minimax 模型（免费）
+3. 选择模型：
+   - **Minimax**（免费）- 默认选项
+   - **GLM-5**（自购 API Key）- 需配置 `GLM_API_KEY` 环境变量
+   - **Claude**（自购 API Key）- 需配置 `ANTHROPIC_API_KEY`
+   - **OpenAI**（自购 API Key）- 需配置 `OPENAI_API_KEY`
 4. 开始使用
+
+> **💡 提示**: Cloud 免费版仅支持 Minimax 模型。如需使用 GLM-5、Claude 或 OpenAI，请切换到 CLI 模式或 GUI 模式并配置自己的 API Key。
 
 **详细指南**: [cookbook/cloud-quickstart.md](cookbook/cloud-quickstart.md)
 

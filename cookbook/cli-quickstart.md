@@ -348,6 +348,10 @@ pip install --upgrade openhands
 
 执行：
 ```bash
+# Shell 脚本：逐行读取 tasks.txt 并执行
+# while read task; do  - 循环读取每一行，赋值给变量 task
+#   openhands run "$task"  - 对每个任务执行 OpenHands
+# done < tasks.txt  - 从 tasks.txt 文件读取输入（< 是输入重定向符号）
 while read task; do
   openhands run "$task"
 done < tasks.txt
